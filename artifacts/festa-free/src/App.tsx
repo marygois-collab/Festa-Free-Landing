@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ArrowDownRight, ArrowUpRight, CalendarDays, Check, HandHeart, MapPin, Sun } from 'lucide-react';
-import heroImage from './assets/festa-free-dancers.jpg';
+import heroImage from '@assets/marcos-paulo-prado-v94pG3exjmc-unsplash.jpg';
 
 function App() {
   const [confirmed, setConfirmed] = useState(false);
