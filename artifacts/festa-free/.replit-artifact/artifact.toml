@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Festa Free"
+description = "Landing page vibrante e responsiva para divulgar a Festa Free, um evento colaborativo ao ar livre com confirmação de presença."
+version = "1.0.0"
+id = "artifacts/festa-free"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18331
+
+[services.development]
+run = "pnpm --filter @workspace/festa-free run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/festa-free", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/festa-free/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18331"
+BASE_PATH = "/"
