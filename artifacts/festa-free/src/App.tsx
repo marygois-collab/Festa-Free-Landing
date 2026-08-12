@@ -36,7 +36,7 @@ function App() {
             festa<br /><span className="ml-[.16em] text-[#f36c38]">free</span>
           </h1>
           <p className="reveal reveal-delay-2 mt-9 max-w-[410px] text-base font-semibold leading-[1.45] text-[#1736b8] sm:text-lg">
-            O carnaval pode estar longe, mas a gente, não! Traga seu corpo, sua música e o que puder somar!
+            O carnaval pode estar longe.... mas a gente, não! Traga seu corpo, sua música e o que puder somar!
           </p>
           <a href="#presenca" className="button-confirm reveal reveal-delay-3 mt-8 inline-flex items-center gap-3 rounded-full border-2 border-[#1736b8] bg-[#f36c38] px-6 py-4 text-sm font-extrabold text-[#fff3bb] shadow-[3px_4px_0_#1736b8]" data-testid="link-hero-confirm">
             confirme presença aqui <ArrowUpRight size={18} strokeWidth={2.5} aria-hidden="true" />
